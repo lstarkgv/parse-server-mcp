@@ -64,8 +64,8 @@ cp .env.example .env
 ```bash
 # Parse Server Configuration
 PARSE_SERVER_URL=http://localhost:1338/api    # URL de tu Parse Server
-APP_ID=fentasticAPI                       # Application ID de Parse
-MASTER_KEY=tu_master_key_aqui            # Master Key de Parse
+APP_ID=your_app_id                        # Application ID de Parse
+MASTER_KEY=your_master_key_here            # Master Key de Parse
 
 # Opcionales
 MCP_PORT=3001                             # Puerto del servidor MCP (default: 3001)
@@ -105,8 +105,8 @@ Edita tu archivo de configuración de Claude Desktop:
       "args": ["http"],
       "env": {
         "PARSE_SERVER_URL": "http://localhost:1338/api",
-        "APP_ID": "fentasticAPI",
-        "MASTER_KEY": "tu_master_key_aqui"
+        "APP_ID": "your_app_id",
+        "MASTER_KEY": "your_master_key_here"
       }
     }
   }
@@ -134,8 +134,8 @@ parse-mcp
       "args": [],
       "env": {
         "PARSE_SERVER_URL": "http://localhost:1338/api",
-        "APP_ID": "fentasticAPI",
-        "MASTER_KEY": "tu_master_key_aqui"
+        "APP_ID": "your_app_id",
+        "MASTER_KEY": "your_master_key_here"
       }
     }
   }
@@ -194,7 +194,7 @@ import { ParseMCP } from '@parse-server/mcp-server';
 // Inicializar servidor
 const server = new ParseMCP({
   parseServerUrl: 'http://localhost:1338/api',
-  appId: 'fentasticAPI',
+  appId: 'your_app_id',
   masterKey: 'your_master_key'
 });
 

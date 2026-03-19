@@ -34,7 +34,7 @@ config({ path: envPath });
 // Configuración
 // Nota: PARSE_SERVER_URL debe incluir el mount point (ej: /api o /parse)
 const PARSE_SERVER_URL = process.env.PARSE_SERVER_URL || 'http://localhost:1338/api';
-const APP_ID = process.env.APP_ID || 'fentasticAPI';
+const APP_ID = process.env.APP_ID || 'your_app_id';
 const MASTER_KEY = process.env.MASTER_KEY || '';
 const MCP_PORT = parseInt(process.env.MCP_PORT || '3001');
 
