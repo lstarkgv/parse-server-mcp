@@ -1,0 +1,43 @@
+{
+  "name": "@parse-server/mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) Server for Parse Server. Enables AI assistants to interact with Parse Server databases following all Parse-specific rules.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "parse-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "http": "node index.js http"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "parse-server",
+    "database",
+    "ai",
+    "assistant",
+    "cli"
+  ],
+  "author": "lstarkgv <lstarkgv@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "dotenv": "^17.3.1",
+    "express": "^4.19.2",
+    "parse": "^8.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lstarkgv/parse-server-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/lstarkgv/parse-server-mcp/issues"
+  },
+  "homepage": "https://github.com/lstarkgv/parse-server-mcp#readme"
+}
